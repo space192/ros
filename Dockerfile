@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 RUN rosdep init && \
   rosdep update --rosdistro $ROS_DISTRO
 
-# setup colcon mixin and metadata
+# setup colcon mixin and metadata 
 RUN colcon mixin add default \
   https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml && \
   colcon mixin update && \
