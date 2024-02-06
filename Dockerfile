@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   python3-colcon-common-extensions \
   python3-colcon-mixin \
   python3-rosdep \
-  python3-vcstool \
+  python3-vcstool \ 
   && rm -rf /var/lib/apt/lists/*
 
 # bootstrap rosdep
